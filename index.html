@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NinjaStars</title>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    #ui {
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      background-color: black;
+    }
+
+    button {
+      margin-right: 10px;
+      font-size: 15px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #title {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    #info {
+      color: white;
+      background-color: black;
+      position: absolute;
+      bottom: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="title">Stars Visualiser</div>
+  <div id="ui">
+    <button id="prev">⬅ Previous 100 stars</button>
+    <button style="float: right;" id="next">➡ Next 100 stars</button>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+
+  <div id="info">Star data is also logged in the console (F12)</div>
+</body>
+
+</html>
